@@ -31,3 +31,5 @@ It will return a rest API (json) with the podcast name, episode name, cover imag
 }
 ]
 ```
+
+API rest + tipeScript (No Framework)

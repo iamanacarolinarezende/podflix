@@ -5,11 +5,11 @@ const server = http.createServer(
     async (req: http.IncomingMessage , res: http.ServerResponse) => {
 
         //query string
-        //http://localhost:3333/api/episode?p=AjudaÊ
+        //http://localhost:3333/api/episode?p=PODCASTNAME
         const[baseUrl, queryString] = req.url?.split("?") ?? ["", ""];
 
-        console.log(baseUrl);
-        console.log(queryString);
+        //console.log(baseUrl);
+        //console.log(queryString);
 
         //list Podcast
         if (req.method === "GET" && baseUrl === "/api/list") {

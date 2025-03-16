@@ -1,7 +1,6 @@
 import fs from "fs";
 import path from "path";
 import { PodcastModel } from "../../models/podcast-model";
-import { json } from "stream/consumers";
 
 const pathData = path.join(__dirname, "../repositories/podcasts.json");
 const language = "utf-8"

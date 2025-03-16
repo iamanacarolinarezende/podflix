@@ -7,7 +7,7 @@ export const app = async (request: http.IncomingMessage , response: http.ServerR
 
     //query string
     //http://localhost:3333/api/episode?p=PODCASTNAME
-    const[baseUrl, queryString] = request.url?.split("?") ?? ["", ""];
+    const baseUrl = request.url?.split("?")[0];
 
     //console.log(baseUrl);
     //console.log(queryString);
